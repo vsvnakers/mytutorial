@@ -1,0 +1,76 @@
+# ========== 基础信息 ==========
+site_name: My Tutorial
+site_description: "个人教程与学习笔记"
+site_author: Vsvnakers
+site_url: https://vsvnakers.github.io/mytutorial/
+copyright: "Copyright © 2025 Vsvnakers"
+
+# ========== 导航目录 ==========
+nav:
+  - 首页: index.md
+  - 编程基础:
+      - Python 教程: programming/python.md
+      - C++ 学习: programming/cpp.md
+      - 前端入门: programming/frontend.md
+  - 数学与算法:
+      - 离散数学: math/discrete.md
+      - 数据结构: math/data_structures.md
+      - 算法分析: math/algorithm.md
+  - 计算机系统:
+      - 操作系统: system/os.md
+      - 组成原理: system/computer_arch.md
+      - 网络: system/network.md
+  - 关于我: about.md
+
+# ========== 主题 ==========
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: 亮色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: 暗色模式
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.follow
+    - content.code.copy
+
+# ========== Markdown 扩展 ==========
+markdown_extensions:
+  - admonition
+  - footnotes
+  - attr_list
+  - def_list
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+
+# ========== 页脚 / 社交信息 ==========
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/vsvnakers
+      name: GitHub
+    - icon: material/email
+      link: mailto:youremail@example.com
+      name: Email
